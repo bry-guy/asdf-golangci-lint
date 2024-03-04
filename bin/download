@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eu
+[ "${BASH_VERSINFO[0]}" -ge 3 ] && set -o pipefail
+
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b "$ASDF_DOWNLOAD_PATH" v"$ASDF_INSTALL_VERSION"
+
+

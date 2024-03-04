@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -eu
+[ "${BASH_VERSINFO[0]}" -ge 3 ] && set -o pipefail
+
+mkdir -p "$ASDF_INSTALL_PATH/bin"
+cp "$ASDF_DOWNLOAD_PATH/golangci-lint" "$ASDF_INSTALL_PATH/bin"
