@@ -3,9 +3,9 @@ set -eu
 [ "${BASH_VERSINFO[0]}" -ge 3 ] && set -o pipefail
 
 cat <<-EOM
-Manage gopls with asdf.
+Manage golangci-lint with asdf.
 
-- https://github.com/bry-guy/asdf-gopls/
-- https://github.com/golang/tools
+- https://github.com/bry-guy/asdf-golangci-lint
+- https://golangci-lint.run
 EOM
 
